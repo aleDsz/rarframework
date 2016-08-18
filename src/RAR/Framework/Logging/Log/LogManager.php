@@ -4,7 +4,7 @@ namespace RAR\Framework\Logging\Log;
 
 class LogManager
 {
-	public static $LogFile = "XpressApp.txt";
+	public static $LogFile = "RarFrameworkLog.txt";
 
 	public function __construct()
 	{
