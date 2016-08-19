@@ -47,6 +47,11 @@ class DataContextFactory
 		{
 			switch ($type)
 			{
+				case "mariadb":
+					$dsn = "mysql:host=$host;port=$port;dbname=$db";
+					return new PDO($dsn, $user, $pwd);
+					break;
+
 				case "mysql":
 					$dsn = "mysql:host=$host:$port;dbname=$db";
 					return new PDO($dsn, $user, $pwd);
