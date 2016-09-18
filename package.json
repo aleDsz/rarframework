@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "RAR Framework",
 	"scripts": {
-		"test": "cd test && rm RarFrameworkLog.txt && php index.php"
+		"test": "cd test && php index.php"
 	},
 	"repository": {
 		"type": "git",
