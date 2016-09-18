@@ -1,4 +1,4 @@
-# RAR Framework
+# RAR Framework [ ![Codeship Status for aleDsz/howmuchdiditcost](https://codeship.com/projects/db44d700-4567-0134-49e7-46c30fca7036/status?branch=master)](https://codeship.com/projects/168649)
 
 ## 1. Introdução
 
