@@ -1,0 +1,15 @@
+{
+	"name": "rar-framework",
+	"version": "1.0.0",
+	"description": "RAR Framework",
+	"scripts": {
+		"test": "cd test && rm RarFrameworkLog.txt && php index.php"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://aleDsz@bitbucket.org/aleDsz/rar-framework.git"
+	},
+	"author": "Alexandre de Souza <alexandre@aledsz.com.br>",
+	"license": "MIT",
+	"homepage": "https://bitbucket.org/aleDsz/rar-framework#readme"
+}
