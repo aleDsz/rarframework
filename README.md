@@ -34,7 +34,7 @@ class ClasseTeste {
 ?>
 ```
 
-**OBS.: **Percebe-se que, acima da nomenclatura da propriedade `$Campo`, existe um comentário com 4 informações diferentes (*field*, *type*, *pk* e *size*). Além disso, acima da nomenclatura da classe, existe um comentário com a função de armazenar o nome da tabela na qual a classe em questão pertence.
+**OBS.:** Percebe-se que, acima da nomenclatura da propriedade `$Campo`, existe um comentário com 4 informações diferentes (*field*, *type*, *pk* e *size*). Além disso, acima da nomenclatura da classe, existe um comentário com a função de armazenar o nome da tabela na qual a classe em questão pertence.
 Essas 4 informações acima da propriedade tem como objetivo, facilitar a criação de instrução SQL, visto que essas informações podem ser alteradas sem afetar o banco de dados em si, apenas para melhorar a performance do seu sistema.
 
 ## 3. Como Utilizar
@@ -117,7 +117,7 @@ class ModelDataAccess
 }
 ```
 
-**OBS.: **Você não precisa criar a classe de forma genérica, você pode criar uma classe de acesso a dados para cada entidade que você criar no modelo citado acima.
+**OBS.:** Você não precisa criar a classe de forma genérica, você pode criar uma classe de acesso a dados para cada entidade que você criar no modelo citado acima.
 
 ## 4. Como Contribuir
 
