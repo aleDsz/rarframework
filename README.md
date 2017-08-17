@@ -129,7 +129,7 @@ Caso queria fazer uma doação para o projeto, você pode realizar [aqui](https:
 
 ## 6. Suporte
 
-Caso você tenha algum problema ou uma sugestão, você pode nos contatar [aqui](https://bitbucket.org/aleDsz/rar-framework/issues).
+Caso você tenha algum problema ou uma sugestão, você pode nos contatar [aqui](https://github.com/aleDsz/rarframework/issues).
 
 ## 7. Licença
 
