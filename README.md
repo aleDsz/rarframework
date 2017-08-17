@@ -13,7 +13,7 @@ Através da classe PDO, é possível realizar uma conexão com vários tipos de 
 
 Neste caso, uma classe deve seguir o seguinte modelo:
 
-```
+```php
 <?php
 
 /**
@@ -41,7 +41,7 @@ Essas 4 informações acima da propriedade tem como objetivo, facilitar a criaç
 
 Para que você possa utilizar todos as funcionalidades do framework no seu ambiente, você pode criar 1 (ou mais, dependendo da sua forma de trabalho) classe para acessar ao banco de dados de forma genérica.
 
-```
+```php
 <?php
 
 namespace DataAccess;
