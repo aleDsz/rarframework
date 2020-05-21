@@ -1,0 +1,14 @@
+{
+    "name": "aledsz/rarframework",
+    "description": "A basic ORM for PHP based on Elixir Ecto",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandre de Souza",
+            "email": "alexandre@aledsz.com.br"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
