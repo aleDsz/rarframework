@@ -1,8 +1,6 @@
 <?php
 
 namespace rarframework {
-  use rarframework\query\Query as QueryBuilder;
-  
   class Schema {
     private $primary_key;
     private $table;
