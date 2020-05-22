@@ -1,14 +1,32 @@
 {
-    "name": "aledsz/rarframework",
-    "description": "A basic ORM for PHP based on Elixir Ecto",
-    "type": "library",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Alexandre de Souza",
-            "email": "alexandre@aledsz.com.br"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "aledsz/rarframework",
+  "description": "A basic ORM for PHP based on Elixir Ecto",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Alexandre de Souza",
+      "email": "alexandre@aledsz.com.br"
+    }
+  ],
+  "scripts": {
+    "test": "phpunit --testdox"
+  },
+  "autoload": {
+    "psr-4": {
+      "rarframework\\": "src/",
+      "rarframework\\query\\": "src/query"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "tests\\schemas\\": "tests/schemas",
+      "tests\\helpers\\": "tests/helpers",
+      "tests\\rarframework\\": "tests/rarframework"
+    }
+  },
+  "minimum-stability": "stable",
+  "require": {
+    "phpunit/phpunit": "9.1.4"
+  }
 }
