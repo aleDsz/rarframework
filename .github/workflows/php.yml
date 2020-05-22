@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: alpine-latest
 
     steps:
     - uses: actions/checkout@v2
@@ -18,7 +18,7 @@ jobs:
       run: composer validate
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      run: composer install --no-progress
 
     - name: Run test suite
       run: composer test
