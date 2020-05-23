@@ -4,10 +4,10 @@ namespace rarframework {
   use rarframework\query\Query as QueryBuilder;
   
   class Query {
-    private $builder;
+    private $_builder;
 
     public function from(\rarframework\Schema $schema) {
-      $this -> builder = new QueryBuilder($schema);
+      $this -> _builder = new QueryBuilder($schema);
       return $this;
     }
 
@@ -16,7 +16,7 @@ namespace rarframework {
     }
 
     public function build() {
-      return $this -> builder;
+      return $this -> _builder;
     }
   }
 }
