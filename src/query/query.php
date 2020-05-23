@@ -17,5 +17,9 @@ namespace rarframework\query {
     public function getSchema() {
       return $this -> schema;
     }
+
+    public function setWhere($where) {
+      $this -> where = $where;
+    }
   }
 }
