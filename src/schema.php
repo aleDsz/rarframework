@@ -11,6 +11,7 @@ namespace rarframework {
     function __construct() {
       $this -> _parser = new \rarframework\Schema\Parser();
       $this -> bootstrap();
+      $this -> inject();
     }
 
     private function bootstrap() {
@@ -55,6 +56,20 @@ namespace rarframework {
       }
 
       return $data;
+    }
+
+    private function inject() {
+      try {
+        $reflection = new \ReflectionClass($this);
+
+        foreach ($this -> fields as $field) {
+          $this -> {$field -> name} = $field -> default;
+        }
+
+        $this -> {$this -> primary_key -> name} = $this -> primary_key -> default;
+      } catch (\Exception $ex) {
+        throw $ex;
+      }
     }
   }
 }
