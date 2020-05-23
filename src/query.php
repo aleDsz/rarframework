@@ -11,8 +11,13 @@ namespace rarframework {
       return $this;
     }
 
-    public function where(Array $conditions) {
-      return $this;
+    public function where($conditions) {
+      if (\is_string($conditions)) {
+        $this -> _builder -> setWhere($conditions);
+        return $this;
+      } else {
+        throw new \Exception("Received argument isn't a string");
+      }
     }
 
     public function build() {
