@@ -24,7 +24,7 @@ namespace rarframework {
         if (!is_null($constructor)) {
           $commentaries = $constructor -> getDocComment();
           $metadata = $this -> _parser -> parseAnnotations($commentaries);
-          
+
           $this -> table = $this -> initTable($metadata["schema"]);
           $this -> primary_key = $this -> newField($metadata["primary_key"][0]);
           $this -> fields = $this -> newFields($metadata["field"]);
@@ -70,6 +70,20 @@ namespace rarframework {
       } catch (\Exception $ex) {
         throw $ex;
       }
+    }
+
+    public function __debugInfo() {
+      $debug = [];
+
+      foreach ($this as $key => $value) {
+        preg_match ('/(_parser|primary_key|table|relationships|fields)/', $key, $has_key);
+
+        if (count ($has_key) === 0) {
+          $debug[$key] = $value;
+        }
+      }
+
+      return $debug;
     }
   }
 }
