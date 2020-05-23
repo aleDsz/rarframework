@@ -13,7 +13,7 @@ namespace rarframework {
       $this -> bootstrap();
     }
 
-    public function bootstrap() {
+    private function bootstrap() {
       try {
         $reflection = new \ReflectionClass($this);
         $this -> fields = [];
@@ -33,11 +33,11 @@ namespace rarframework {
       }
     }
 
-    public function initTable($table) {
+    private function initTable($table) {
       return $table[0];
     }
 
-    public function newField($data) {
+    private function newField($data) {
       foreach ($data["options"] as $key => $value) {
         $data[$key] = $value;
       }
@@ -47,7 +47,7 @@ namespace rarframework {
       return new \rarframework\Schema\Field($data);
     }
 
-    public function newFields($parameters) {
+    private function newFields($parameters) {
       $data = [];
 
       foreach ($parameters as $item) {
